@@ -26,6 +26,3 @@ findFactorals(euler);
 
 
 
-
-
-
