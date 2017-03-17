@@ -1,26 +1,31 @@
-function findFactorals(x){
-	for (i=2;i<x;i++){
-		if(x%i === 0 && findPrime(i)){console.log(i);}
-	} 
-}
+
 
 function findPrime(num){
-	for (i=2;i<num;i++) {
-		if(num%i === 0){return false;}
+	for (y=num-1;y>1;y--) {
+	  if(num%y === 0){return false;}
 	} return num;
 }
 
-
-
-//solution  - above stuff is notes
 function findFactorals(x){
-	for (i=x-1;i>1;i--){
-		if(x%i === 0 && findPrime(i)){console.log(i);}
-	} 
-}
+	var temp = 0
+	for (i=2;i<x;i++){ 
+		if(x%i === 0 && findPrime(i)){
+		  	x=x/i;
+		  	temp = i;
+		}
+	}
+	if (i <= x && findPrime(i)){console.log(i);}
+	else{console.log(temp);}
+} 
 
-function findPrime(num){
-	for (z=num-1;z>1;z--) {
-		if(num%z === 0){return false;}
-	} return num;
-}
+var euler = 600851475143;
+
+findFactorals(euler);
+
+
+
+
+
+
+
+
