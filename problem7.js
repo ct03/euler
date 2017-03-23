@@ -1,31 +1,4 @@
-<<<<<<< HEAD
-function squareOfSums(x){
-	var sum = 0;
-	for (i=1;i<=x;i++){
-		sum += i;
-	}
-	sum *= sum;
-	return sum;
-}
 
-//squareOfSums(10);
-
-function sumOfSquares(n){
-	var sum = 0;
-	for (x=1;x<=n;x++){
-		sum += x*x
-	}
-	return sum;
-}
-
-//sumOfSquares(10);
-
-function euler(z){
-	return squareOfSums(z)-sumOfSquares(z)
-}
-
-euler(100);
-=======
 //working function to find a primes up to n
 
 function findP(x){
@@ -70,4 +43,3 @@ function findNPrime(limit){
 }
 
 findNPrime(6);
->>>>>>> 6f45c1a68b124c2fc539753f880d4df4f3248032
